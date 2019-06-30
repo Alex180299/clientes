@@ -19,11 +19,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/homepage' },
-  'get /clientes' : function(req, res, next){
-    res.json({test: true});    
-  }
-
+  'GET /clientes':'clientes.getClientes'
 
   /***************************************************************************
   *                                                                          *
